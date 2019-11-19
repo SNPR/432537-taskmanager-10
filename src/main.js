@@ -337,4 +337,6 @@ for (let i = 0; i < 3; i++) {
   renderElement(boardList, getBoardCard());
 }
 
-renderElement(boardList, getLoadMoreButton());
+const board = document.querySelector(`.board`);
+
+renderElement(board, getLoadMoreButton());
