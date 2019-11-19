@@ -1,3 +1,5 @@
+'use strict';
+
 const getMenu = () => {
   const menu = `
     <section class="control__btn-wrap">
@@ -321,14 +323,14 @@ const renderElement = (container, element) => {
   container.insertAdjacentHTML(`beforeend`, element);
 };
 
-const main = document.querySelector('main');
-const menu = main.querySelector('.main__control');
+const main = document.querySelector(`main`);
+const menu = main.querySelector(`.main__control`);
 
 renderElement(menu, getMenu());
 renderElement(main, getMainFilters());
 renderElement(main, getBoardList());
 
-const boardList = document.querySelector('.board__tasks');
+const boardList = document.querySelector(`.board__tasks`);
 renderElement(boardList, getTaskCreateForm());
 
 for (let i = 0; i < 3; i++) {
