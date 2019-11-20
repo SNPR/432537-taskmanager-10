@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
 const getMenu = () => {
-  const menu = `
+  return `
     <section class="control__btn-wrap">
       <input type="radio" name="control" id="control__new-task" class="control__input visually-hidden" />
       <label for="control__new-task" class="control__label control__label--new-task">+ ADD NEW TASK</label>
@@ -11,12 +11,10 @@ const getMenu = () => {
       <label for="control__statistic" class="control__label">STATISTICS</label>
     </section>
   `;
-
-  return menu;
 };
 
 const getMainFilters = () => {
-  const mainFilters = `
+  return `
     <section class="main__filter filter container">
       <input type="radio" id="filter__all" class="filter__input visually-hidden" name="filter" checked />
       <label for="filter__all" class="filter__label"> All <span class="filter__all-count">13</span></label>
@@ -44,12 +42,10 @@ const getMainFilters = () => {
       >
     </section>
   `;
-
-  return mainFilters;
 };
 
 const getBoardList = () => {
-  const boardList = `
+  return `
     <section class="board container">
       <div class="board__filter-list">
         <a href="#" class="board__filter">SORT BY DEFAULT</a>
@@ -60,12 +56,10 @@ const getBoardList = () => {
       <div class="board__tasks"></div>
     </section>
   `;
-
-  return boardList;
 };
 
 const getBoardCard = () => {
-  const boardCard = `
+  return `
     <article class="card card--black">
       <div class="card__form">
         <div class="card__inner">
@@ -129,12 +123,10 @@ const getBoardCard = () => {
       </div>
     </article>
   `;
-
-  return boardCard;
 };
 
 const getTaskCreateForm = () => {
-  const taskCreateForm = `
+  return `
     <article class="card card--edit card--black">
       <form class="card__form" method="get">
         <div class="card__inner">
@@ -305,18 +297,14 @@ This is example of new task, you can add picture, set date and time, add tags.
       </form>
     </article>
   `;
-
-  return taskCreateForm;
 };
 
 const getLoadMoreButton = () => {
-  const loadMoreButton = `
+  return `
     <button class="load-more" type="button">
       load more
     </button>
   `;
-
-  return loadMoreButton;
 };
 
 const renderElement = (container, element) => {
